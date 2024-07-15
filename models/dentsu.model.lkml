@@ -3,13 +3,6 @@ connection: "sequispro_reporting"
 # include all the views
 include: "/views/**/*.view.lkml"
 
-# datagroup: dentsu_default_datagroup {
-#   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-#   max_cache_age: "1 hour"
-# }
-
-# persist_with: dentsu_default_datagroup
-
 explore: four_box { # Modified
   from: 4box
 }
