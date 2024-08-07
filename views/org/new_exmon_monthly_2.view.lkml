@@ -1,5 +1,5 @@
 view: new_exmon_monthly_2 {
-  sql_table_name: `reporting.new_exmon_monthly_2` ;;
+  sql_table_name: `datalake-inlab.reporting.new_exmon_monthly_2` ;;
 
   dimension: active_agent {
     type: number
@@ -84,10 +84,14 @@ view: new_exmon_monthly_2 {
     type: number
     sql: ${TABLE}.period_id ;;
   }
+
+  # This dimension is redundant with internal Looker feature for `dimension_group`: period
+  # Those dimension_group contains dimension period_raw, period_date, period_week, period_month, period_quarter, period_year.
   # dimension: period_year {
   #   type: number
   #   sql: ${TABLE}.period_year ;;
   # }
+
   dimension: prev_month_active_agent {
     type: number
     sql: ${TABLE}.prev_month_active_agent ;;
