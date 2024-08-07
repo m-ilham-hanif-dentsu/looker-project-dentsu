@@ -3,6 +3,7 @@ view: exmon__monthly {
     explore_source: new_exmon_monthly_2 {
       column: period { field: new_exmon_monthly_2.period }
       column: total_policy { field: new_exmon_monthly_2.total_policy }
+      column: total_fyap_a { field: new_exmon_monthly_2.total_fyap_a }
       column: total_fyap_b { field: new_exmon_monthly_2.total_fyap_b }
       column: active_agent { field: new_exmon_monthly_2.active_agent }
     }
@@ -18,6 +19,11 @@ view: exmon__monthly {
   measure: total_policy {
     type: sum
     sql: ${TABLE}.total_policy ;;
+  }
+
+  measure: total_fyap_a {
+    type: sum
+    sql: ${TABLE}.total_fyap_a ;;
   }
 
   measure: total_fyap_b {
