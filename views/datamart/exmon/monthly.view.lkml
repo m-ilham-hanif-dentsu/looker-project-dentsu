@@ -8,12 +8,34 @@ view: exmon__monthly {
   }
 
   # Dimension
-  dimension_group: period {
-    type: time
-    timeframes: [raw, date, week, month, quarter, year]
-    convert_tz: no
-    datatype: date
+  dimension: period_raw {
+    type: string
+    sql: ${TABLE}.period_raw ;;
+  }
+
+  dimension: period_date {
+    type: string
     sql: ${TABLE}.period_date ;;
+  }
+
+  dimension: period_week {
+    type: string
+    sql: ${TABLE}.period_week ;;
+  }
+
+  dimension: period_month {
+    type: string
+    sql: ${TABLE}.period_month ;;
+  }
+
+  dimension: period_quarter {
+    type: string
+    sql: ${TABLE}.period_quarter ;;
+  }
+
+  dimension: period_year {
+    type: string
+    sql: ${TABLE}.period_year ;;
   }
 
   dimension: agent_name {
