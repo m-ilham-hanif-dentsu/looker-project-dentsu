@@ -19,20 +19,24 @@ view: exmon__monthly {
   measure: total_policy {
     type: sum
     sql: ${TABLE}.total_policy ;;
+    drill_fields: [period]
   }
 
   measure: total_fyap_a {
     type: sum
     sql: ${TABLE}.total_fyap_a ;;
+    drill_fields: [period]
   }
 
   measure: total_fyap_b {
     type: sum
     sql: ${TABLE}.total_fyap_b ;;
+    drill_fields: [period]
   }
 
   measure: active_agent {
     type: sum
     sql: ${TABLE}.active_agent ;;
+    drill_fields: [period]
   }
 }
