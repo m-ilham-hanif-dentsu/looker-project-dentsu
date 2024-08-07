@@ -10,7 +10,7 @@ view: exmon__monthly {
   # Dimension
   dimension: period {
     type: date
-    sql: PARSE_DATE( CONCAT( ${TABLE}.period, "-01"), "%Y-%m-%d") ;;
+    sql: TIMESTAMP(PARSE_DATE( "%Y-%m-%d", CONCAT(${TABLE}.period, "-01") )) ;;
   }
 
   dimension: agent_name {
