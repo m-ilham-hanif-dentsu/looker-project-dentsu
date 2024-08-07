@@ -8,34 +8,9 @@ view: exmon__monthly {
   }
 
   # Dimension
-  dimension: period_raw {
+  dimension: period {
     type: string
-    sql: ${TABLE}.period_raw ;;
-  }
-
-  dimension: period_date {
-    type: string
-    sql: ${TABLE}.period_date ;;
-  }
-
-  dimension: period_week {
-    type: string
-    sql: ${TABLE}.period_week ;;
-  }
-
-  dimension: period_month {
-    type: string
-    sql: ${TABLE}.period_month ;;
-  }
-
-  dimension: period_quarter {
-    type: string
-    sql: ${TABLE}.period_quarter ;;
-  }
-
-  dimension: period_year {
-    type: string
-    sql: ${TABLE}.period_year ;;
+    sql: ${TABLE}.period ;;
   }
 
   dimension: agent_name {
