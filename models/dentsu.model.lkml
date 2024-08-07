@@ -192,9 +192,9 @@ include: "/views/**/*.view.lkml"
 #   from: new_exmon_daily
 # }
 
-# explore: new_exmon_monthly_2 {
-#   from: new_exmon_monthly_2
-# }
+explore: new_exmon_monthly_2 {
+  from: new_exmon_monthly_2
+}
 
 # explore: period_mapping {
 #   from: period_mapping
