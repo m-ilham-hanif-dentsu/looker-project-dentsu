@@ -17,3 +17,7 @@ explore: exmon__monthly {
 explore: exmon__rekap {
   from: exmon__rekap
 }
+
+explore: exmon__monthly__v2 {
+  from: exmon__monthly__v2
+}

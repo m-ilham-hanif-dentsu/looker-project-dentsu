@@ -18,7 +18,6 @@ view: exmon__monthly {
     sql: ${TABLE}.agent_name ;;
   }
 
-  # Measure
   dimension: total_fyap_a {
     type: number
     sql: ${TABLE}.total_fyap_a ;;
