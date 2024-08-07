@@ -2,7 +2,7 @@
 connection: "sequispro_reporting"
 
 # Include all the Views file
-include: "/views/**/**.lkml"
+include: "/views/**/*.lkml"
 
 # Original View
 explore: new_exmon_monthly_2 {
