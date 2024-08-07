@@ -7,17 +7,10 @@ include: "/views/**/**.lkml"
 # Original View
 explore: new_exmon_monthly_2 {
   from: new_exmon_monthly_2
+  hidden: yes
 }
 
 # Data Mart View
 explore: exmon__monthly {
   from: exmon__monthly
-}
-
-explore: exmon__rekap {
-  from: exmon__rekap
-}
-
-explore: exmon__monthly__v2 {
-  from: exmon__monthly__v2
 }
