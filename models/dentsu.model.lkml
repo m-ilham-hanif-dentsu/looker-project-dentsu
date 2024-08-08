@@ -13,4 +13,5 @@ explore: new_exmon_monthly_2 {
 # Data Mart View
 explore: exmon__monthly {
   from: exmon__monthly
+  label: "Executive Monitoring - Monthly Trends"
 }
